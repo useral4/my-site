@@ -1,0 +1,232 @@
+ul {
+    display: flex;
+    align-items: center;
+
+}
+
+*{
+    box-sizing: border-box;
+    color: #fff;
+}
+
+ul li {
+    margin: 0 auto;
+    list-style-type: none;
+
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+header {
+    width: 100%;
+}
+
+html, body {
+    background: #000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+ul button {
+    outline: none;
+    border: none;
+    background: rgb(185, 0, 0);
+    color: #fff;
+    font-size: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.main-promo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-promo img {
+    margin-top: -300px;
+}
+
+.main-promo button {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #fff;
+    border-radius: 50px;
+    background: #C70000;
+    width: 627px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
+.main-promo p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    height: 10px;
+    width: 627px;
+}
+
+.main-promo {
+    width: 100%;
+    height: 1000px;
+}
+
+.second-promo {
+    margin-top: -200px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.second-promo h1 {
+    text-transform: uppercase;
+    font-size: 35px;
+    text-align: center;
+}
+
+.second-promo-btn-item button {
+    text-transform: uppercase;
+    background-color: #C70000;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    height: 50px;
+    width: 100%;
+    padding: 20px;
+}
+
+.second-promo-btn-item{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.second-promo-btn {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+}
+
+.third-promo {
+    display: flex;
+    justify-content: center;
+}
+
+.third-promo-container {
+    width: 1500px;
+
+}
+
+.third-promo-image {
+
+}
+
+.third-promo-container img {
+    padding: 40px;
+    padding-left: 150px;
+}
+
+
+
+/* Медиа-запросы для адаптивного дизайна на разных устройствах */
+
+@media (max-width: 768px) {
+    ul li:nth-child(2n+1){
+        display: none;
+        text-align: center;
+        padding-left: 0px;
+    }
+
+    ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .header {
+        padding-left: 0px;
+    }
+
+    ul li {
+        margin: 10px;
+    }
+
+    .main-promo img {
+        width: 100%;
+    }
+
+    .main-promo button,
+    .second-promo-btn-item button {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .main-promo p,
+    .main-promo button {
+        width: 100%;
+        text-align: center;
+        font-size: 16px;
+        padding: 8px;
+    }
+
+    .second-promo {
+        margin-top: -360px;
+    }
+
+    .third-promo {
+        margin-top: 50px;
+    }
+
+    .third-promo img{
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+        padding-top: 20px;
+    }
+
+    .third-promo-container img {
+        padding-left: 0px;
+    }
+}
+
+@media (max-width: 480px) {
+    html, body {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .main-promo button,
+    .second-promo-btn-item button {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .main-promo button {
+        width: 300px;
+    }
+
+    .main-promo p {
+        font-size: 18px;
+    }
+    .second-promo-btn-item button {
+        font-size: 12px;
+    }
+
+    ul {
+        padding-left: 0px;
+    }
+}
